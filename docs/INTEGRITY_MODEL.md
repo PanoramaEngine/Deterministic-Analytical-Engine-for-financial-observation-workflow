@@ -161,17 +161,3 @@ It is used when:
 
 Fail Hard prioritizes defensibility over continuity.
 
----
-
-## 10. Architectural Boundary
-
-This document defines integrity semantics as a structural model.
-
-It does not describe:
-
-- Internal validation rules  
-- Policy logic  
-- Calculation methods  
-- Infrastructure enforcement mechanisms  
-
-Its purpose is to formalize integrity as an auditable classification layer.
