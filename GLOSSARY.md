@@ -3,7 +3,6 @@
 This glossary defines the formal terminology of Panorama Engine.
 
 The terms describe architectural constructs and system states.  
-They do not disclose implementation details or internal operational logic.
 
 ---
 
