@@ -56,7 +56,7 @@ Panorama Engine:
 - Executes deterministic analytical cycles  
 - Generates formalized decision artifacts  
 - Classifies execution integrity states  
-- Maintains full traceability of inputs, transformations, and outputs  
+- Maintains full traceability of inputs, transformations and outputs  
 - Enables forensic reconstruction of decisions  
 
 Each analytical cycle produces a verifiable integrity fingerprint.
