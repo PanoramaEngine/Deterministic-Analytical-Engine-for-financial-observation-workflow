@@ -3,7 +3,6 @@
 This document provides a structural overview of Panorama Engine as an integrated architectural system.
 
 It defines the relationship between its principal layers and canonical objects.  
-It does not describe internal implementation mechanics.
 
 ---
 
