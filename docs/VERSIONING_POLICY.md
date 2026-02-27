@@ -3,9 +3,7 @@
 This document defines the versioning principles governing Panorama Engine documentation and architectural structure.
 
 Versioning is treated as a structural discipline.  
-It ensures traceability, compatibility, and audit coherence.
-
-This policy does not describe source code management practices.
+It ensures traceability, compatibility and audit coherence.
 
 ---
 
