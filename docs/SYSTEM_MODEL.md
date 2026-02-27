@@ -3,6 +3,7 @@
 This document provides a structural overview of Panorama Engine as an integrated architectural system.
 
 It defines the relationship between its principal layers and canonical objects.  
+It does not describe internal implementation mechanics.
 
 ---
 
@@ -90,4 +91,57 @@ It includes:
 - Limited Mode  
 - Read-Only Mode  
 
-Governance is intrinsic
+Governance is intrinsic to execution, not external to it.
+
+Integrity classification is embedded in the Snapshot.
+
+---
+
+## 6. Observability & Context Layer
+
+This layer ensures contextual defensibility.
+
+It includes:
+
+- Market Context  
+- Temporal Context  
+- Decision Trace Context  
+- Provenance Integrity  
+- Deterministic Context  
+
+Context does not alter deterministic execution.  
+It preserves explainability and audit coherence.
+
+---
+
+## 7. Analytical Classification Layer
+
+This layer formalizes structural interpretation of conditions.
+
+It includes:
+
+- Regime Engine  
+- Global Regime  
+- Regime Transition  
+- Threshold Profile  
+- Calibration Profile  
+- Confidence Score  
+- Risk Score  
+- Market Pressure  
+
+This layer provides structured classification without altering the determinism of the core.
+
+---
+
+## 8. Operational Configuration
+
+Operational states define execution boundaries.
+
+They include:
+
+- Execution Status  
+- Tenant Scope  
+- Enterprise Mode  
+- Self-Hosted Instance  
+
+Operational configuration governs admissible behavior but does not redefine architectural principles.
