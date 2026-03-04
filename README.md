@@ -182,3 +182,11 @@ This version represents a formal documentation freeze of the Panorama Engine arc
 It defines a stable reference point for structural terminology, governance semantics, integrity classification and versioning principles.
 
 Subsequent modifications will follow controlled revision discipline.
+
+## Technical Evaluation
+
+Panorama Engine is currently under active architectural development.
+
+A small number of technical evaluators are being invited to review the architecture and stress-test the deterministic model.
+
+If you are experienced with analytical infrastructure, deterministic systems or quantitative research pipelines, technical feedback is welcome.
