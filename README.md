@@ -55,6 +55,26 @@ The decision process itself must remain demonstrable.
 
 ---
 
+## Design Scope
+
+Panorama Engine addresses a structural problem common in analytical environments dealing with financial market data:
+
+analytical results are often reproducible at the data level but not at the **process level**.
+
+In many research pipelines it is difficult to reconstruct:
+
+- which analytical modules executed  
+- in which canonical order  
+- which fallbacks or overrides were triggered  
+- what the exact configuration state was  
+- whether execution degraded silently  
+
+Panorama Engine approaches this problem by enforcing deterministic analytical cycles and explicit integrity classification of each execution stage.
+
+The goal is not performance optimization, but **structural demonstrability of analytical processes**.
+
+---
+
 ## What Panorama Engine Is
 
 Panorama Engine is an architectural system for the **analysis and formalization of analytical decisions**.
