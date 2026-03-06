@@ -12,6 +12,12 @@ Panorama Engine focuses on financial market analysis performed within bounded an
 
 The goal is to ensure that analytical decisions remain formally reconstructible, technically verifiable and defensible over time.
 
+In Panorama Engine, each analytical cycle produces not only a result but a structured **decision record**.
+
+The resulting snapshot preserves the analytical state in which the decision was produced, including the selected asset frame, the evaluated market context and the integrity state of the execution.
+
+This snapshot functions as a **verifiable decision evidence artifact**, allowing the analytical decision to be revisited, reconstructed and independently examined after execution.
+
 ---
 
 ## Structural Overview
