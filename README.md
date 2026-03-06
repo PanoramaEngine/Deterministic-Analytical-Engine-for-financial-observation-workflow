@@ -36,6 +36,48 @@ Each completed cycle therefore leaves a **verifiable execution record** that can
 
 ---
 
+# Documentation Map
+
+The architecture of Panorama Engine is documented through a set of focused technical documents.
+
+These documents describe the structural principles of the system without disclosing internal implementation details.
+
+## System Architecture
+
+- **SYSTEM_MODEL.md**  
+  Structural overview of the Panorama Engine architecture and its coordinated layers.
+
+- **DETERMINISTIC_CYCLE.md**  
+  Formal model of the Kernel Cycle and deterministic execution structure.
+
+## Integrity & Governance
+
+- **INTEGRITY_MODEL.md**  
+  Structural integrity semantics and snapshot validity model.
+
+- **CAPABILITY_MODEL.md**  
+  Governance model defining READ, EXECUTE and AUDIT interaction modes.
+
+## Observability & Context
+
+- **OBSERVABILITY_MODEL.md**  
+  Structural observability principles and inspection capabilities.
+
+- **CONTEXT_MODEL.md**  
+  Context model describing environmental, temporal and decision context.
+
+## Analytical Traceability
+
+- **FORENSIC_REPLAY_MODEL.md**  
+  Deterministic replay and forensic reconstruction of analytical cycles.
+
+## Architectural Guarantees
+
+- **ASSURANCE_STATEMENT.md**  
+  Formal statement describing the architectural guarantees of Panorama Engine.
+
+---
+
 ## Executive Positioning
 
 Panorama Engine is designed for environments where **financial market analysis contributes to decision processes that must remain demonstrable and auditable**.
