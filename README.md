@@ -78,6 +78,22 @@ These documents describe the structural principles of the system without disclos
 
 ---
 
+## Suggested Reading Path
+
+For readers exploring Panorama Engine for the first time:
+
+1. SYSTEM_MODEL.md  
+2. DETERMINISTIC_CYCLE.md  
+3. INTEGRITY_MODEL.md  
+
+For governance and audit architecture:
+
+4. CAPABILITY_MODEL.md  
+5. OBSERVABILITY_MODEL.md  
+6. FORENSIC_REPLAY_MODEL.md
+
+---
+
 ## Executive Positioning
 
 Panorama Engine is designed for environments where **financial market analysis contributes to decision processes that must remain demonstrable and auditable**.
