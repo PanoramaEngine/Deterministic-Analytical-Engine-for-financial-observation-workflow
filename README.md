@@ -37,6 +37,26 @@ Each completed cycle therefore leaves a **verifiable execution record** that can
 
 ---
 
+## Architectural Structure
+
+Panorama Engine is organized as a set of coordinated architectural layers that govern deterministic execution, structural integrity and forensic observability.
+
+                Identity & Versioning
+                         │
+                         ▼
+            Deterministic Execution Layer
+                         │
+                         ▼
+                Snapshot & State Layer
+                         │
+                         ▼
+             Governance & Integrity Layer
+                         │
+                         ▼
+           Observability & Context Layer
+
+---
+
 ## Executive Positioning
 
 Panorama Engine is designed for environments where **financial market analysis contributes to decision processes that must remain demonstrable and auditable**.
