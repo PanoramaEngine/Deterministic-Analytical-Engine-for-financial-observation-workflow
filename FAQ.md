@@ -39,6 +39,14 @@ Traceability and integrity states are architectural components of the system.
 
 ---
 
+## Is Panorama Engine similar to event-sourcing systems?
+
+Some aspects of Panorama Engine may resemble patterns such as event-sourcing, hermetic execution environments or build systems.
+
+However, Panorama Engine focuses specifically on deterministic analytical cycles, structural integrity classification and forensic replay of analytical processes rather than general-purpose event logs or distributed ledgers.
+
+---
+
 ## Is this repository a deployable product?
 
 No.
