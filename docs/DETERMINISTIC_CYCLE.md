@@ -75,6 +75,9 @@ Snapshot sealing ensures:
 A Snapshot is not a mutable state.  
 It is a formalized record of execution.
 
+Once sealed, a Snapshot cannot be modified.
+Any subsequent analytical activity must occur through the execution of a new Kernel Cycle.
+
 ---
 
 ## 5. Integrity Assignment
@@ -131,7 +134,7 @@ The Timeline:
 - Enables Snapshot Diff comparison  
 - Supports deterministic replay  
 
-Historical consistency is preserved through structural fingerprinting.
+Historical consistency is preserved through structural fingerprinting and ordered snapshot lineage.
 
 ---
 
