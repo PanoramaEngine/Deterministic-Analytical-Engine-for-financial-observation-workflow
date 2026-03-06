@@ -22,6 +22,7 @@ Each analytical cycle:
 - Contributes to a chained integrity hash  
 - Classifies its structural state (READY / DEGRADED / HALTED / FROZEN)  
 - Generates a reproducible execution artifact  
+- Produces a **cryptographic execution fingerprint** that allows the analytical cycle to be independently verified  
 
 A cycle is considered valid only if:
 
@@ -30,7 +31,8 @@ A cycle is considered valid only if:
 - Hash-chain continuity is maintained  
 - Integrity state is formally sealed  
 
-The system guarantees **process-level determinism**, not only data-level reproducibility.
+The system guarantees **process-level determinism**, not only data-level reproducibility.  
+Each completed cycle therefore leaves a **verifiable execution record** that can be deterministically replayed and technically audited.
 
 ---
 
@@ -107,15 +109,15 @@ Its primary objective is **structural accountability**.
 
 Panorama Engine:
 
-- analyzes structured signals and contextual data  
+- analyzes structured signals and contextual market data  
 - executes deterministic analytical cycles  
 - generates formalized decision artifacts  
 - classifies execution integrity states  
 - maintains full traceability of analytical transformations  
-- enables forensic reconstruction of analytical decisions  
+- produces cryptographically verifiable execution artifacts  
+- enables deterministic forensic replay of analytical cycles  
 
-Each cycle produces a sealed structural record that can be replayed under identical inputs.
-
+Each analytical cycle produces a sealed structural record and a cryptographic execution fingerprint that allows the analytical process to be independently verified and reconstructed.
 ---
 
 ## When Panorama Engine Becomes Necessary
