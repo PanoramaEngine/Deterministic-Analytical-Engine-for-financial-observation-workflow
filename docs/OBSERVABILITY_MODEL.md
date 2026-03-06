@@ -37,7 +37,24 @@ Observability applies to structural objects, not to internal computation logic.
 
 ---
 
-## 3. Snapshot Timeline Visibility
+## 3. Cycle Trace Visibility
+
+Each Kernel Cycle produces a structural execution trace.
+
+The trace records the progression of the analytical process across its canonical stages.
+
+Trace visibility enables:
+
+- inspection of stage progression  
+- verification of execution order  
+- identification of structural anomalies  
+- reconstruction of the analytical timeline  
+
+Trace artifacts are observational in nature and do not modify the execution outcome.
+
+---
+
+## 4. Snapshot Timeline Visibility
 
 All Snapshots form a Snapshot Timeline.
 
@@ -47,11 +64,11 @@ The Timeline enables:
 - Structural comparison through Snapshot Diff  
 - Referential verification across time  
 
-The Timeline preserves structural continuity.
+The Timeline preserves structural continuity and ordered lineage between analytical cycles.
 
 ---
 
-## 4. Contextual Observability
+## 5. Contextual Observability
 
 Observability includes contextual coherence through:
 
@@ -64,7 +81,7 @@ Context ensures that decisions can be interpreted within their structural enviro
 
 ---
 
-## 5. Governance Transparency
+## 6. Governance Transparency
 
 Governance conditions are observable through:
 
@@ -72,11 +89,11 @@ Governance conditions are observable through:
 - Governance Policy Mode  
 - Operational Mode (Read-Only, Limited, Fail Hard)  
 
-Governance transparency prevents hidden state transitions.
+Governance transparency prevents hidden state transitions and ensures that operational restrictions are observable.
 
 ---
 
-## 6. Deterministic Inspectability
+## 7. Deterministic Inspectability
 
 Observability relies on deterministic reproducibility.
 
@@ -87,3 +104,13 @@ A Snapshot is considered inspectable when:
 - Structural invariants are preserved  
 
 Inspectability does not require exposure of internal algorithms.
+
+---
+
+## 8. Observability Boundaries
+
+Observability within Panorama Engine focuses on structural transparency.
+
+The system exposes the structural state of analytical execution while preserving the confidentiality of internal analytical logic.
+
+This approach allows analytical decisions to remain inspectable and defensible without exposing proprietary computation models.
