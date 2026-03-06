@@ -20,7 +20,31 @@ A Cycle is formally bounded and reproducible.
 
 ---
 
-## 2. Deterministic Execution
+## 2. Canonical Execution Stages
+
+Each Kernel Cycle follows a canonical staged execution structure.
+
+The stages represent the structural progression of the analytical process.
+
+PRE → CORE → POST → AUDIT
+
+PRE  
+Preparation of the analytical environment and validation of structural preconditions.
+
+CORE  
+Execution of the analytical model and generation of the Decision Artifact.
+
+POST  
+Finalization of execution outputs and construction of the Global Snapshot.
+
+AUDIT  
+Integrity evaluation, classification and formal sealing of the analytical cycle.
+
+This staged structure ensures that analytical execution remains predictable, traceable and structurally auditable.
+
+---
+
+## 3. Deterministic Execution
 
 Determinism is a structural constraint.
 
@@ -37,7 +61,7 @@ Stochastic or undefined behavior is excluded from the governed execution domain.
 
 ---
 
-## 3. Snapshot Sealing
+## 4. Snapshot Sealing
 
 At the conclusion of each Kernel Cycle, a Global Snapshot is sealed.
 
@@ -53,7 +77,7 @@ It is a formalized record of execution.
 
 ---
 
-## 4. Integrity Assignment
+## 5. Integrity Assignment
 
 Each Snapshot is assigned a Snapshot Status.
 
@@ -67,7 +91,7 @@ Integrity is evaluated as part of execution, not as a post-processing activity.
 
 ---
 
-## 5. State Transition Governance
+## 6. State Transition Governance
 
 Kernel Cycles operate within defined System States.
 
@@ -81,7 +105,7 @@ Invalid transitions are classified rather than silently tolerated.
 
 ---
 
-## 6. Failure Formalization
+## 7. Failure Formalization
 
 Failure is a defined architectural condition.
 
@@ -97,7 +121,7 @@ It is part of the model.
 
 ---
 
-## 7. Timeline Consistency
+## 8. Timeline Consistency
 
 All Global Snapshots form a Snapshot Timeline.
 
