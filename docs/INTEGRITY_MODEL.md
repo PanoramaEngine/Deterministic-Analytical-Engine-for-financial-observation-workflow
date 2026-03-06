@@ -110,7 +110,25 @@ It is a structural validity classification.
 
 ---
 
-## 8. Execution Impact
+## 8. Snapshot Sealing
+
+Once a Snapshot is produced it is treated as an immutable execution artifact.
+
+Snapshots are structurally sealed at the end of the analytical cycle.
+
+Sealing ensures that:
+
+- the structural state of the cycle cannot be modified retroactively
+- integrity classification remains tied to the original execution
+- the analytical process can be reconstructed without ambiguity
+
+Sealing transforms a Snapshot from a transient runtime object into a persistent analytical record.
+
+Subsequent analytical activity must therefore occur through new Kernel Cycles rather than modification of prior Snapshots.
+
+---
+
+## 9. Execution Impact
 
 Integrity semantics are connected to Execution Status.
 
@@ -125,7 +143,7 @@ They are governed operational modes aligned with structural integrity.
 
 ---
 
-## 9. Modes
+## 10. Modes
 
 ### Read-Only Mode
 
