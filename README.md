@@ -5,7 +5,7 @@ Panorama Engine is a deterministic analytical execution kernel designed to make 
 
 The system operates as a governed analytical runtime in which each analytical cycle executes within a sealed deterministic structure and produces a verifiable execution artifact.
 
-Panorama Engine is designed for analytical environments involving **financial market observation and decision processes**, where analytical results must remain formally reconstructible, technically verifiable and defensible over time.
+Panorama Engine is designed for analytical environments involving financial market observation and decision processes, where analytical results must remain formally reconstructible, technically verifiable and defensible over time.
 
 ---
 
