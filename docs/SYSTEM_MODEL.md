@@ -1,15 +1,16 @@
 # System Model
 
-This document provides a structural overview of Panorama Engine as an integrated architectural system.
+This document provides a structural overview of Panorama Engine as a deterministic analytical infrastructure.
 
-It defines the relationship between its principal layers and canonical objects.  
-It does not describe internal implementation mechanics.
+It describes the architectural layers that govern execution, state formation, governance control and forensic observability within the system.
+
+The model focuses on structural relationships between architectural components rather than implementation details.
 
 ---
 
 ## 1. Architectural Composition
 
-Panorama Engine is structured around five coordinated layers:
+Panorama Engine is structured around multiple coordinated layers:
 
 1. Identity & Versioning Layer  
 2. Deterministic Execution Layer  
@@ -17,7 +18,7 @@ Panorama Engine is structured around five coordinated layers:
 4. Governance & Integrity Layer  
 5. Observability & Context Layer  
 
-These layers operate as a unified system.
+These layers operate as a unified system and together define the structural execution model of Panorama Engine.
 
 ---
 
@@ -70,6 +71,7 @@ It includes:
 - State Transition  
 
 A Snapshot represents a sealed structural record of execution.
+Snapshots are immutable once sealed and form the canonical timeline of analytical execution.
 
 The Snapshot Timeline preserves historical coherence.
 
@@ -92,7 +94,7 @@ It includes:
 - Read-Only Mode  
 
 Governance is intrinsic to execution, not external to it.
-
+Governance constraints are evaluated during execution rather than applied retroactively.
 Integrity classification is embedded in the Snapshot.
 
 ---
@@ -116,6 +118,7 @@ It preserves explainability and audit coherence.
 
 ## 7. Analytical Classification Layer
 
+This layer interprets structural analytical conditions without altering deterministic execution.
 This layer formalizes structural interpretation of conditions.
 
 It includes:
