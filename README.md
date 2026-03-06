@@ -1,5 +1,7 @@
 # Panorama Engine
+
 Deterministic analytical execution kernel for auditable financial research and decision environments.
+
 Keywords: deterministic execution • analytical reproducibility • governance-driven analytics • forensic replay • financial research infrastructure
 
 Panorama Engine is a deterministic analytical execution kernel designed to make complex analytical processes structurally reproducible and auditable.
@@ -37,9 +39,9 @@ Each completed cycle therefore leaves a **verifiable execution record** that can
 
 ---
 
-## Architectural Structure
-
 Panorama Engine is organized as a set of coordinated architectural layers that govern deterministic execution, structural integrity and forensic observability.
+
+## Architectural Structure
 
                 Identity & Versioning
                          │
