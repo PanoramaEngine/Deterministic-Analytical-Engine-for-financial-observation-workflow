@@ -4,11 +4,13 @@ Deterministic analytical execution kernel for auditable financial research and d
 
 Keywords: deterministic execution • analytical reproducibility • governance-driven analytics • forensic replay • financial research infrastructure
 
-Panorama Engine is a deterministic analytical execution kernel designed to make complex analytical processes structurally reproducible and auditable.
+Panorama Engine is a deterministic analytical execution kernel designed to make complex financial analytical processes structurally reproducible and auditable.
 
 The system operates as a governed analytical runtime in which each analytical cycle executes within a sealed deterministic structure and produces a verifiable execution artifact.
 
-Panorama Engine is designed for analytical environments involving financial market observation and decision processes, where analytical results must remain formally reconstructible, technically verifiable and defensible over time.
+Panorama Engine focuses on financial market analysis performed within bounded analytical cycles, where a selected set of assets is evaluated and the resulting decision context is preserved through deterministic snapshots.
+
+The goal is to ensure that analytical decisions remain formally reconstructible, technically verifiable and defensible over time.
 
 ---
 
