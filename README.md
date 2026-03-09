@@ -1,200 +1,144 @@
 # Panorama Engine
 
-Deterministic analytical execution kernel for auditable financial research and decision environments.
+**Deterministic analytical execution kernel for reproducible and auditable research pipelines**
 
-Keywords: deterministic execution • analytical reproducibility • governance-driven analytics • forensic replay • financial research infrastructure
+Panorama Engine is a deterministic analytical runtime designed to make complex analytical processes **structurally reproducible, inspectable and replayable**.
 
-Panorama Engine is a deterministic analytical execution kernel designed to make complex financial analytical processes structurally reproducible and auditable.
+Conceptually, Panorama Engine treats analytical runs as **deterministic cycles** that produce sealed snapshots of the analytical state.  
+These snapshots function similarly to versioned commits for analytical processes, allowing analytical decisions to be reconstructed exactly as they occurred.
 
-The system operates as a governed analytical runtime in which each analytical cycle executes within a sealed deterministic structure and produces a verifiable execution artifact.
-
-Panorama Engine focuses on financial market analysis performed within bounded analytical cycles, where a selected set of assets is evaluated and the resulting decision context is preserved through deterministic snapshots.
-
-The goal is to ensure that analytical decisions remain formally reconstructible, technically verifiable and defensible over time.
-
-In Panorama Engine, each analytical cycle produces not only a result but a structured **decision record**.
-
-The resulting snapshot preserves the analytical state in which the decision was produced, including the selected asset frame, the evaluated market context and the integrity state of the execution.
-
-This snapshot functions as a **verifiable decision evidence artifact**, allowing the analytical decision to be revisited, reconstructed and independently examined after execution.
+Originally developed for **financial research environments**, the architecture applies to any analytical domain where **process-level reproducibility, governance and forensic replay** are required.
 
 ---
 
-## Structural Overview
+# Core Concept
+
+In Panorama Engine, each analytical cycle produces not only a result but a structured **decision record**.
+
+The resulting snapshot preserves the analytical state in which the decision was produced, including:
+
+- evaluated asset frame  
+- analytical context  
+- execution configuration  
+- integrity classification  
+
+This snapshot functions as a **verifiable decision evidence artifact**, allowing analytical decisions to be revisited, reconstructed and independently examined after execution.
+
+---
+
+# Quick Example
+
+Conceptually, an analytical run in Panorama Engine behaves like this:
+
+select asset universe 
+          ▼ 
+run deterministic analytical cycle
+          ▼ 
+generate sealed analytical snapshot 
+          ▼ 
+snapshot becomes verifiable decision record
+          ▼ 
+analytical decision can be replayed later
+
+Each cycle produces a **snapshot of the analytical state** that can be replayed under identical inputs, ensuring full reproducibility of the analytical process.
+
+---
+
+# Structural Overview
 
 Panorama Engine operates through **sealed deterministic analytical cycles** composed of four immutable stages:
 
 PRE → CORE → POST → AUDIT
 
+
 Each analytical cycle:
 
-- Executes modules in canonical order  
-- Produces sealed stage envelopes  
-- Contributes to a chained integrity hash  
-- Classifies its structural state (READY / DEGRADED / HALTED / FROZEN)  
-- Generates a reproducible execution artifact  
-- Produces a **cryptographic execution fingerprint** that allows the analytical cycle to be independently verified  
+- executes modules in canonical order  
+- produces sealed stage envelopes  
+- contributes to a chained integrity hash  
+- classifies its structural state *(READY / DEGRADED / HALTED / FROZEN)*  
+- generates a reproducible execution artifact  
+- produces a **cryptographic execution fingerprint**
 
 A cycle is considered valid only if:
 
-- Execution ordering invariants are preserved  
-- No unauthorized fallback is triggered  
-- Hash-chain continuity is maintained  
-- Integrity state is formally sealed  
+- execution ordering invariants are preserved  
+- no unauthorized fallback is triggered  
+- hash-chain continuity is maintained  
+- integrity state is formally sealed  
 
-The system guarantees **process-level determinism**, not only data-level reproducibility.  
-Each completed cycle therefore leaves a **verifiable execution record** that can be deterministically replayed and technically audited.
-
----
-
-Panorama Engine is organized as a set of coordinated architectural layers that govern deterministic execution, structural integrity and forensic observability.
-
-## Architectural Structure
-
-                Identity & Versioning
-                         │
-                         ▼
-            Deterministic Execution Layer
-                         │
-                         ▼
-                Snapshot & State Layer
-                         │
-                         ▼
-             Governance & Integrity Layer
-                         │
-                         ▼
-           Observability & Context Layer
+The system guarantees **process-level determinism**, not only data-level reproducibility.
 
 ---
 
-## Executive Positioning
+# Architectural Structure
 
-Panorama Engine is designed for environments where **financial market analysis contributes to decision processes that must remain demonstrable and auditable**.
+Panorama Engine is organized as a coordinated set of architectural layers governing deterministic execution, structural integrity and forensic observability.
 
-It is intended for governance-oriented contexts where demonstrability is as important as analytical correctness.
-
-Most analytical infrastructures focus primarily on generating outputs and improving performance.
-
-Panorama Engine focuses instead on **structural demonstrability of analytical processes**.
-
-It addresses a specific institutional question:
-
-> Can we demonstrate, step by step, why this analytical decision was produced?
-
-In regulated or high-accountability environments, output correctness alone is insufficient.  
-The analytical process itself must remain demonstrable.
+Identity & Versioning 
+          ▼ 
+Deterministic Execution Layer
+          ▼ 
+Snapshot & State Layer
+          ▼ 
+Governance & Integrity Layer
+           ▼ 
+Observability & Context Layer
 
 ---
 
-## Design Scope
+# The Problem Panorama Engine Addresses
 
-Panorama Engine addresses a structural problem common in analytical environments dealing with financial market data:
+In many analytical environments, results may be reproducible at the **data level** but not at the **process level**.
 
-analytical results are often reproducible at the data level but not at the **process level**.
-
-In many analytical pipelines it becomes difficult to reconstruct:
+It often becomes difficult to reconstruct:
 
 - which analytical modules executed  
-- in which canonical order they ran  
-- which fallbacks or overrides were triggered  
-- what the exact configuration state was  
+- the canonical execution order  
+- triggered fallbacks or overrides  
+- the exact configuration state  
 - whether execution degraded silently  
 
-Panorama Engine approaches this problem by enforcing deterministic analytical cycles and explicit integrity classification for each stage of execution.
+Panorama Engine addresses this problem by enforcing **deterministic analytical cycles** and explicit **integrity classification**.
 
-The goal is not performance optimization, but **structural demonstrability of analytical processes**.
+The goal is not performance optimization.
 
----
-
-# Documentation Map
-
-The architecture of Panorama Engine is documented through a set of focused technical documents.
-
-These documents describe the structural principles of the system without disclosing internal implementation details.
-
-## System Architecture
-
-- **SYSTEM_MODEL.md**  
-  Structural overview of the Panorama Engine architecture and its coordinated layers.
-
-- **DETERMINISTIC_CYCLE.md**  
-  Formal model of the Kernel Cycle and deterministic execution structure.
-
-## Integrity & Governance
-
-- **INTEGRITY_MODEL.md**  
-  Structural integrity semantics and snapshot validity model.
-
-- **CAPABILITY_MODEL.md**  
-  Governance model defining READ, EXECUTE and AUDIT interaction modes.
-
-## Observability & Context
-
-- **OBSERVABILITY_MODEL.md**  
-  Structural observability principles and inspection capabilities.
-
-- **CONTEXT_MODEL.md**  
-  Context model describing environmental, temporal and decision context.
-
-## Analytical Traceability
-
-- **FORENSIC_REPLAY_MODEL.md**  
-  Deterministic replay and forensic reconstruction of analytical cycles.
-
-## Architectural Guarantees
-
-- **ASSURANCE_STATEMENT.md**  
-  Formal statement describing the architectural guarantees of Panorama Engine.
+The goal is **structural demonstrability of analytical processes**.
 
 ---
 
-## Suggested Reading Path
+# Core Capabilities
 
-For readers exploring Panorama Engine for the first time:
+Panorama Engine provides:
 
-1. SYSTEM_MODEL.md  
-2. DETERMINISTIC_CYCLE.md  
-3. INTEGRITY_MODEL.md  
+- deterministic analytical execution cycles  
+- formal integrity classification of execution  
+- full traceability of analytical transformations  
+- deterministic replay of analytical cycles  
+- cryptographically verifiable execution artifacts  
+- forensic reconstruction of analytical decisions  
 
-For governance and audit architecture:
-
-4. CAPABILITY_MODEL.md  
-5. OBSERVABILITY_MODEL.md  
-6. FORENSIC_REPLAY_MODEL.md
-
----
-
-## Core Capabilities
-
-Panorama Engine:
-
-- analyzes structured signals and contextual market data  
-- executes deterministic analytical cycles  
-- generates formalized decision artifacts  
-- classifies execution integrity states  
-- maintains full traceability of analytical transformations  
-- produces cryptographically verifiable execution artifacts  
-- enables deterministic forensic replay of analytical cycles  
-
-Each analytical cycle produces a sealed structural record and a cryptographic execution fingerprint that allows the analytical process to be independently verified and reconstructed.
+Each cycle produces a sealed structural record that can be **replayed under identical inputs**.
 
 ---
 
-## Intended Context of Use
+# Typical Application Domains
 
-Panorama Engine is designed for:
+Panorama Engine supports analytical environments where **reproducibility and auditability are critical**.
 
-- institutional analytical infrastructures  
-- structured investment environments  
-- quantitative research groups  
-- governance and risk oversight teams  
-- regulated or supervised environments  
+Examples include:
 
-It is not intended for retail deployment or consumer applications.
+- financial research pipelines  
+- quantitative analysis systems  
+- machine learning experimentation workflows  
+- scientific research pipelines  
+- governance-sensitive analytical systems  
+
+The architecture was originally developed for **financial market analysis**, but its deterministic execution model is **domain-agnostic**.
 
 ---
 
-## Architectural Principles
+# Architectural Principles
 
 Panorama Engine is structured around four foundational principles.
 
@@ -212,91 +156,106 @@ Control rules are embedded within the architecture rather than applied externall
 
 ---
 
-## What Panorama Engine Is
+# When Panorama Engine Becomes Necessary
 
-Panorama Engine is an architectural system for the **analysis and formalization of analytical decisions**.
-
-It provides:
-
-- deterministic analytical cycles  
-- formal integrity classification  
-- full traceability of analytical inputs and transformations  
-- deterministic replay of analytical cycles  
-
-Each analytical cycle produces a **verifiable integrity fingerprint**, allowing analytical decisions to be reconstructed and examined after execution.
-
----
-
-## What Panorama Engine Is Not
-
-Panorama Engine is not:
-
-- a retail trading platform  
-- a public SaaS product  
-- a black-box optimization engine  
-- an open-source performance library  
-
-The system does not prioritize speed over traceability and does not rely on opaque abstractions.
-
-Its primary objective is **structural accountability**.
-
----
-
-## When Panorama Engine Becomes Necessary
-
-Panorama Engine becomes necessary in environments where analytical processes must remain demonstrable.
+Panorama Engine becomes valuable when analytical processes must remain demonstrable.
 
 Typical scenarios include:
 
 ### Formal Accountability
-Decisions must be explained retrospectively in technical, not narrative terms.
+Decisions must be explained retrospectively in technical terms.
 
 ### Regulated Environments
 Audit, compliance or supervisory requirements are present.
 
 ### High Operational Risk
-Systemic errors cannot be attributed to opaque or emergent behavior.
+Systemic errors cannot be attributed to opaque behavior.
 
 ### Independent Review
-Third parties must be able to verify the structural coherence of the analytical process.
+Third parties must be able to verify analytical coherence.
 
 ### Failure Classification
 Failure states must be explicitly classified rather than silently degraded.
 
 ---
 
-## Repository Scope
+# Documentation Map
+
+The architecture of Panorama Engine is documented through focused technical documents describing the structural model without disclosing proprietary implementation.
+
+## System Architecture
+
+- `SYSTEM_MODEL.md` — architectural structure  
+- `DETERMINISTIC_CYCLE.md` — deterministic execution model  
+
+## Integrity & Governance
+
+- `INTEGRITY_MODEL.md` — integrity semantics  
+- `CAPABILITY_MODEL.md` — governance interaction model  
+
+## Observability & Context
+
+- `OBSERVABILITY_MODEL.md` — structural observability  
+- `CONTEXT_MODEL.md` — analytical context model  
+
+## Analytical Traceability
+
+- `FORENSIC_REPLAY_MODEL.md` — deterministic replay framework  
+
+## Architectural Guarantees
+
+- `ASSURANCE_STATEMENT.md` — architectural guarantees of the system  
+
+---
+
+# Suggested Reading Path
+
+For readers exploring Panorama Engine for the first time:
+
+1. `SYSTEM_MODEL.md`  
+2. `DETERMINISTIC_CYCLE.md`  
+3. `INTEGRITY_MODEL.md`  
+
+For governance and audit architecture:
+
+4. `CAPABILITY_MODEL.md`  
+5. `OBSERVABILITY_MODEL.md`  
+6. `FORENSIC_REPLAY_MODEL.md`
+
+---
+
+# Repository Scope
 
 This repository documents the **architectural model and governance framework** of Panorama Engine.
 
 It includes:
 
 - conceptual system architecture  
-- deterministic cycle model  
+- deterministic execution model  
 - integrity classification framework  
 - governance and observability principles  
 
-Operational infrastructure, execution pipelines and proprietary modules are maintained within controlled enterprise environments and are not part of this repository.
+Operational infrastructure, execution pipelines and proprietary modules are maintained within controlled enterprise environments and are **not included in this repository**.
 
 ---
 
-## Technical Feedback
+# Technical Feedback
 
-Architectural critique and technical discussion are welcome via GitHub Issues.
+Architectural critique and technical discussion are welcome via **GitHub Issues**.
 
 ---
 
-## Technical Evaluation
+# Technical Evaluation
 
 Panorama Engine is currently under active architectural development.
 
-A small number of technical evaluators are invited to review the architecture and stress-test the deterministic execution model.
+A limited number of **technical evaluators** are invited to review the architecture and stress-test the deterministic execution model.
 
-If you have experience with:
+Feedback from engineers working in:
 
 - analytical infrastructure  
 - deterministic systems  
 - quantitative research pipelines  
 - reproducible analytical workflows  
 
-technical feedback is welcome.
+is particularly valuable.
