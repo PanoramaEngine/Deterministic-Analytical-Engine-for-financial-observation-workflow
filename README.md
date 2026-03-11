@@ -200,11 +200,13 @@ The architecture of Panorama Engine is documented through focused technical docu
 
 ## Analytical Traceability
 
-- `FORENSIC_REPLAY_MODEL.md` — deterministic replay framework  
+- `FORENSIC_REPLAY_MODEL.md` — deterministic replay framework
+- `CYCLE_FORENSICS.md` — cycle-level forensic inspection and decision evidence artifacts
+
 
 ## Architectural Guarantees
 
-- `ASSURANCE_STATEMENT.md` — architectural guarantees of the system  
+- `ASSURANCE_STATEMENT.md` — architectural guarantees of the system
 
 ---
 
