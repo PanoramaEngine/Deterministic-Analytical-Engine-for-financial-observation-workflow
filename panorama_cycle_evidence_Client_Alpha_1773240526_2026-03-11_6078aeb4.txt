@@ -1,0 +1,21 @@
+PANORAMA ENGINE
+Cycle Forensic Evidence Report
+
+Tenant: Client_Alpha
+Cycle ID: 1773240526
+Timestamp: 2026-03-11T14:48:46Z
+
+Snapshot status: VALID
+Asset count: 7
+
+Integrity status: ok
+Lineage anchor: c1373230ab9aedb2c81ad998abc1257d5c6eae5977635d6af414cac261a5a210
+Lineage fingerprint: eb84c28efdf0b39663542794688a174bfbb820fa444ed635eba2ebf603bbfb89
+
+Previous cycle fingerprint: bb863dccc6e1bddbbfc196e3730072fdbbdd1192e77df1e8b98a8939008d34bf
+Current cycle fingerprint: 6078aeb4312fcbe4c586e77190c6a17838a0de02e03d40a81ce7a1074a0860ad
+Cycle continuity fingerprint: 7e32152a2ead3a46d0bee557c889ecf2363703e2254fc602736c70a487f0790e
+
+Decision mode: ANALYSIS_ONLY
+Global regime: NEUTRAL
+Assets considered: AAPL, MSFT, NDX, NVDA, SPX, USDJPY, XAUUSD
