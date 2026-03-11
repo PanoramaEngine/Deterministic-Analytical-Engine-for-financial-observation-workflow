@@ -16,7 +16,7 @@ These artifacts allow analytical decisions to be reconstructed and independently
 
 ## Example: Cycle Forensic Inspection
 
-![Cycle Forensics Panel](images/CYCLE_FORENSIC_EVIDENCE.png)
+![Cycle Forensics Panel](../images/CYCLE_FORENSIC_EVIDENCE.png)
 
 The Cycle Forensics panel exposes:
 
@@ -34,8 +34,8 @@ The Cycle Forensics panel exposes:
 
 Each cycle can produce exportable evidence artifacts:
 
-- Evidence report (TXT)(examples/cycle_evidence/panorama_cycle_evidence_Client_Alpha_1773240526_2026-03-11_6078aeb4.txt)
-- Asset snapshot (CSV)(examples/cycle_evidence/panorama_cycle_assets_Client_Alpha_1773240526_2026-03-11_6078aeb4.csv)
+- [Evidence report (TXT)](../examples/cycle_evidence/panorama_cycle_evidence_Client_Alpha_1773240526_2026-03-11_6078aeb4.txt)
+- [Asset snapshot (CSV)](../examples/cycle_evidence/panorama_cycle_assets_Client_Alpha_1773240526_2026-03-11_6078aeb4.csv)
 - Evidence pack (ZIP)
 
 These artifacts allow external auditors or reviewers to verify the analytical decision context independently.
