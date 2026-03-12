@@ -2,12 +2,6 @@
 
 **Deterministic analytical execution kernel for reproducible and auditable research pipelines**
 
----
-
-📄 **Architecture Paper**
-
-Panorama Engine — Runtime deterministico per processi decisionali analitici riproducibili e verificabili  
-
 Read the full paper [here](https://dev.to/panorama_engine/reproducibility-of-analytical-decisions-introducing-a-deterministic-analytical-runtime-3nn0)
 
 Panorama Engine is a deterministic analytical runtime designed to make complex analytical processes **structurally reproducible, inspectable and replayable**.
