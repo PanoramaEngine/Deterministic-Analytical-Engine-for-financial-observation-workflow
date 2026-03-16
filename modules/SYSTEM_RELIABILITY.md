@@ -119,7 +119,7 @@ This allows identification of bottlenecks in the execution pipeline.
 
 # Example Panel
 
-![System Reliability](images/system_reliability.png)
+![System Reliability]([images/system_reliability.png](https://github.com/PanoramaEngine/Deterministic-Analytical-Engine-for-financial-observation-workflow/blob/main/images/SYSTEM_RELIABILITY.png))
 
 The System Reliability panel provides a live view of runtime health and execution stability.
 
